@@ -11,7 +11,7 @@ export class ReceiptService {
 
   /**
    * Processes a receipt and calculates points.
-   * @param receipt - The receipt object.
+   * @param receipt
    */
   processReceipt(receipt: ReceiptDto): ReceiptResponseDTO {
     const points = this.calculatePoints(receipt);
@@ -33,7 +33,7 @@ export class ReceiptService {
 
   /**
    * Calculates the total points for a receipt based on the defined rules.
-   * @param receipt - The receipt object.
+   * @param receipt
    * @returns - Total points for the receipt.
    */
   private calculatePoints(receipt: ReceiptDto): number {
